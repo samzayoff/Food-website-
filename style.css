@@ -1,0 +1,494 @@
+/* ESSENTIAL THINGS */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* FONT SETTING */
+.font1 {
+
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+/* HEADER SETTING */
+
+.name {
+    background-color: #1D3557;
+    display: flex;
+    justify-content: center;
+    color: #FFC107;
+    font-size: 1.5vw;
+}
+
+header>a {
+    text-decoration: none;
+}
+
+.name h1 {
+    filter: drop-shadow(0px 0px 5px);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #1D3557;
+}
+
+.pages {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pages-item {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2vw;
+    color: #F8F1E9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.pages-item:hover {
+    color: rgb(252, 229, 27);
+
+    filter: drop-shadow(0px 0px 10px #FFC107);
+}
+
+.pages>a {
+    text-decoration: none;
+
+}
+
+@media screen and (min-width: 720px) {
+    .pages {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .name {
+        font-size: 3vw;
+    }
+
+    .pages-item {
+        font-size: large;
+    }
+
+    .boxes>h1 {
+        font-size: large;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .name {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pages {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .pages-item {
+        font-size: 5vw;
+    }
+
+    .boxes>h1 {
+        font-size: 5vw;
+    }
+
+}
+
+/* MAIN SECTION SETTING */
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./pictures/food1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 696px) {
+    .main1>div {
+        font-size: 4vw;
+    }
+
+    .special>div {
+        font-size: 4vw;
+    }
+}
+
+.m1-h1 {
+    display: flex;
+    font-family: "Pacifico", serif;
+    font-size: x-large;
+    justify-content: center;
+    color: #FFC107;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+}
+
+.main3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes {
+    display: flex;
+    border: 3px solid #FFC107;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+    transition: 0.4s all ease-in-out;
+}
+
+.boxes:hover {
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.boxes>h1 {
+    justify-content: center;
+    font-weight: bolder;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFC107;
+    font-size: larger;
+}
+
+.main4 {
+    display: flex;
+    justify-content: center;
+}
+
+.special {
+    display: flex;
+    background-image: url(./pictures/appet1\ \(1\).jpg);
+    background-repeat: no-repeat;
+    border: 4px solid#1D3557;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 4px #1D3557);
+}
+
+
+.main6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pa1 {
+    display: flex;
+    justify-content: center;
+}
+
+.pa {
+    width: 60%;
+}
+
+.pa>p {
+    text-align: justify;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1D3557;
+}
+
+@media screen and (max-width:780px) {
+    .pa {
+        width: 90%;
+    }
+}
+
+.main6.a,
+.main3>a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-ul>a {
+    text-decoration: none;
+    color: #1D3557;
+    font-size: medium;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.b-heading{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SETTING */
+
+
+footer {
+    background-color: #1D3557;
+    /* Deep navy for footer background */
+    color: #F8F1E9;
+    /* Cream text for readability */
+    padding: 40px 20px;
+    font-family: 'Lato', sans-serif;
+    filter: drop-shadow(0px 0px 7px black);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-family: "Playwrite VN", serif;
+    font-size: 24px;
+    color: #FFC107;
+}
+
+.footer-logo p {
+    font-family: "Geologica", serif;
+    font-size: 14px;
+    color: #F8F1E9;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+    border-right: 1px solid aliceblue;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 29px;
+    margin-bottom: 10px;
+    color: #FFC107;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a,
+.footer-social a {
+    font-family: "Geologica", serif;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #FFC107;
+}
+
+.footer-contact p {
+    font-family: "Geologica", serif;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    font-family: "Geologica", serif;
+    color: #FFC107;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "Geologica", serif;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Geologica", serif;
+    font-size: 12px;
+    color: #F8F1E9;
+}
+
+.footer-item {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2vw;
+    color: #F8F1E9;
+    font-family: "Geologica", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.active {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFC107;
+    font-size: 25px;
+}

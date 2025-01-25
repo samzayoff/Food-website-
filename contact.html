@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f9fa;
+        }
+        .contact-container {
+          max-width: 800px;
+          margin: 50px auto;
+          background: #ffffff;
+          padding: 30px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+        }
+        .contact-info {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .contact-info p {
+          margin: 5px 0;
+          color: #555555;
+        }
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+        }
+        .contact-form label {
+          margin-bottom: 5px;
+          font-weight: bold;
+          color: #333333;
+        }
+        .contact-form input,
+        .contact-form textarea {
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #cccccc;
+          border-radius: 5px;
+          font-size: 16px;
+          width: 100%;
+        }
+        .contact-form button {
+          padding: 10px 15px;
+          border: none;
+          background-color: #e63946;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        .contact-form button:hover {
+          background-color: #d62828;
+        }
+        .map {
+          margin-top: 30px;
+          text-align: center;
+        }
+        .map iframe {
+          border: none;
+          width: 100%;
+          height: 300px;
+          border-radius: 10px;
+        }
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <a href="./Index.html">
+            <div class="name" id="home">
+                <h1 class="font1">FlavorFusion</h1>
+            </div>
+        </a>
+    </header>
+    <header style="position: sticky; top: 0px;">
+        <a href="#home">
+            <div class="name">
+                <h1 class="font1">Contact us</h1>
+            </div>
+        </a>    
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <div>
+                <h1 class="font1 b-heading">Contact Us</h1>
+            </div>
+            <div class="contact-info">
+              <p><strong>Phone:</strong> +1 234 567 890</p>
+              <p><strong>Email:</strong> info@flavorfusion.com</p>
+              <p><strong>Address:</strong> 123 Fusion Street, Food City</p>
+            </div>
+            <form class="contact-form" method="post">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+              
+              <button type="submit">Send Message</button>
+            </form>
+            <div class="map">
+                <div>
+                    <h1 class="font1 b-heading">Find us Here</h1>
+                </div>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105852.24881353052!2d71.46383137248789!3d33.995544640170706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917b90f0e79cf%3A0xa816b2637558a412!2sPeshawar%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1737666314004!5m2!1sen!2s"  allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <div class="container">
+                    <div class="pages">
+                        <a href="./recipes.html">
+                            <div class="pages-item">Recipes</div>
+                        </a>
+                        <a href="./blog.html">
+                            <div class="pages-item">Blog</div>
+                        </a>
+                        <a href="./about.html">
+                            <div class="pages-item">About</div>
+                        </a>
+                        <a href="./contact.html">
+                            <div class="pages-item  active">Contact</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p class="footer-item">Email: <a href="mailto:info@flavorfusion.com">info@flavorfusion.com</a></p>
+                <p class="footer-item">Phone: <a href="tel:+123456789">+1 234 567 89</a></p>
+                <p class="footer-item">Address: 123 Fusion Street, Food City</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank" class="footer-item"><i class="fa fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" class="footer-item"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="footer-item"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 FlavorFusion. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
